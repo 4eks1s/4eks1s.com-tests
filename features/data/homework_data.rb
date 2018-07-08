@@ -1,5 +1,5 @@
 def getHomeWorkData
-   data = Homewrok.new('test@gopo.co', @homework_key, '1 diena', '200', 'upload 1d homework')
+   data = Homewrok.new('test@gopo.co', @homework_key, '1 diena', 200, 'upload 1d homework')
   return data
 end
 
@@ -11,7 +11,7 @@ class Homewrok
       'key' => key,
       'exptime' => exptime
     }
-    puts key
+    
     self.response_code = response_code
     self.error = error
   end
