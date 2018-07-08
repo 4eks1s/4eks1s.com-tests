@@ -9,7 +9,7 @@ end
 
 def uploadHomework(data)
   response = API.post(@base_url + 'homework/upload?' + convertToUrl(data.data),
-                      headers: {'Content-Type' => 'application'},
+                      headers: {'Content-Type' => 'application/x-www-form-urlencoded'},
                       cookies: {},
                       payload: {})
 
