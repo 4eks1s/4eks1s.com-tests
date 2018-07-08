@@ -11,6 +11,7 @@ class Homewrok
       'key' => key,
       'exptime' => exptime
     }
+    puts key
     self.response_code = response_code
     self.error = error
   end
